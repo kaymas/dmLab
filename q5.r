@@ -1,6 +1,10 @@
-library(caret)
-library(RWeka)
-install.packages(RWeka)
+install.packages("caret")
+install.packages("RWeka")
+install.packages("lubridate")
+
+library("caret")
+library("RWeka")
+
 
 ir<-iris
 
@@ -67,3 +71,4 @@ confusionMatrix(x)
 #knn
 x<-train(Species~.,ir,preProcess = NULL,method="knn",trControl=trainControl(method = "cv",number = 4))
 confusionMatrix(x)
+

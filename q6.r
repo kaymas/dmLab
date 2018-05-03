@@ -29,3 +29,4 @@ dbc<-dbscan(ir[1:4],eps=0.8,minPts = 10)
 dbc<-dbscan(d,eps=0.8,minPts = 10)
 clusplot(ir[1:4],dbc$cluster,labels = 2,lines = T)
 hullplot(ir[1:4],dbc$cluster)
+

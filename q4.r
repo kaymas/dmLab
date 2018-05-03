@@ -14,6 +14,7 @@ bakery<-read.transactions("1000-out1.csv")
 inspect(bakery)
 bakery
 r<-apriori(bakery,parameter = list(support=0.04,conf=0.3,minlen=2))
+
 inspect(r)
 
 bakery<-read.transactions("1000i.csv")
